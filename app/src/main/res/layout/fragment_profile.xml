@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0B2F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TOP BAR WITH LOGOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:backgroundTint="#FF5252"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- PROFILE IMAGE -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/bg_circle"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- USER INFO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="14dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logged in as"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/txtUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user@email.com"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- ACTIVITY SUMMARY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="14dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📊 My Activity"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/txtTotalReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Reports: 0"
+                android:textColor="#E0E0E0"/>
+
+            <TextView
+                android:id="@+id/txtPendingReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔴 Pending: 0"
+                android:textColor="#FF8A80"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/txtRescuedReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🟢 Rescued: 0"
+                android:textColor="#69F0AE"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- STATUS LEGEND -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="14dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏷 Status Legend"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔴 Pending – Action not taken"
+                android:textColor="#FF8A80"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🟢 Rescued – Animal helped"
+                android:textColor="#69F0AE"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- REPORT LIST TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Reports"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- REPORT LIST -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

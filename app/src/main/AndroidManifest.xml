@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ================= PERMISSIONS ================= -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Care4Paws"
+        tools:targetApi="31">
+
+        <!-- ================= FILE PROVIDER ================= -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- ================= SPLASH (LAUNCHER) ================= -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ================= INTRO ================= -->
+        <activity android:name=".IntroActivity" android:exported="false" />
+
+        <!-- ================= AUTH ================= -->
+        <activity android:name=".Login_Activity" android:exported="false"/>
+        <activity android:name=".RegisterActivity" android:exported="false"/>
+        <activity android:name=".SignupActivity" android:exported="false"/>
+
+        <!-- ================= MAIN ================= -->
+        <activity android:name=".MainActivity" android:exported="false"/>
+
+        <!-- ================= ADMIN ================= -->
+        <activity android:name=".AdminLoginActivity" android:exported="false"/>
+        <activity android:name=".AdminDashboardActivity" android:exported="false"/>
+
+        <!-- ================= FEEDBACK (NEW) ================= -->
+        <activity android:name=".AddFeedbackActivity" android:exported="false"/>
+
+        <!-- ================= OLD REPORT (OPTIONAL REMOVE) ================= -->
+        <!-- Remove these if you are NOT using reports anymore -->
+        <!--
+        <activity android:name=".AddReportActivity" android:exported="false"/>
+        <activity android:name=".ViewReportsActivity" android:exported="false"/>
+        -->
+        <activity android:name=".ViewReportsActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "301281353800",
+    "project_id": "care4paws-816ff",
+    "storage_bucket": "care4paws-816ff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301281353800:android:80316eed49f41e4f4f387d",
+        "android_client_info": {
+          "package_name": "com.shrinjal.care4paws"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlLIC1HItI-YZuYDSZmsALrNt-FBKh0WM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301281353800:android:223ed3d611752c6d4f387d",
+        "android_client_info": {
+          "package_name": "com.shrinjal.care4paws.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlLIC1HItI-YZuYDSZmsALrNt-FBKh0WM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
