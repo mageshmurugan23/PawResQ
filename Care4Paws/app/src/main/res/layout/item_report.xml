@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card">
+
+    <ImageView
+        android:id="@+id/imgReport"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD"
+        android:contentDescription="Report Image"/>
+
+    <TextView
+        android:id="@+id/txtAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Animal: Dog"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User: U123"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: 0.0, 0.0"
+        android:textColor="#BDBDBD"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:textSize="14sp"/>
+
+</LinearLayout>

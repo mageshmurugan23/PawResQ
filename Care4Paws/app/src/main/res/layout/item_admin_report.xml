@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_card"
+    android:layout_marginBottom="10dp">
+
+    <!-- 🖼️ IMAGE -->
+    <ImageView
+        android:id="@+id/imgReport"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD"
+        android:contentDescription="Report Image"/>
+
+    <!-- 🐶 Animal -->
+    <TextView
+        android:id="@+id/txtAnimal"
+        android:text="Animal: Dog"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/ic_launcher_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 👤 User -->
+    <TextView
+        android:id="@+id/txtUser"
+        android:text="User: U123"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 📍 Location -->
+    <TextView
+        android:id="@+id/txtLocation"
+        android:text="Location: Navi Mumbai"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 🚦 Status -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:text="Status: Pending"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 🔘 Buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnPending"
+            android:text="Pending"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnRescued"
+            android:text="Rescued"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#4CAF50"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

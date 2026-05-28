@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1B1745"/>   <!-- Dark purple card -->
+    <corners android:radius="18dp"/>
+</shape>

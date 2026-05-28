@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0B2F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 1. IMAGE PREVIEW (ALWAYS VISIBLE) -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/input_bg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_image"/>
+
+        <!-- 2. CAPTURE PHOTO -->
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Capture Photo"
+            android:background="@drawable/bg_button"
+            android:textColor="@android:color/white"/>
+
+        <!-- 3. PICK FROM GALLERY -->
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Pick from Gallery"
+            android:background="@drawable/bg_button"
+            android:textColor="@android:color/white"/>
+
+        <!-- 4. NAME -->
+        <EditText
+            android:id="@+id/reportName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:hint="Your Name"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"/>
+
+        <!-- 5. PHONE NUMBER -->
+        <EditText
+            android:id="@+id/reportPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"/>
+
+        <!-- 6. ANIMAL CATEGORY -->
+        <EditText
+            android:id="@+id/animalType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:hint="Animal Category (Dog, Cat, Cow etc.)"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"/>
+
+        <!-- 7. DESCRIPTION -->
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="8dp"
+            android:hint="Describe the situation"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"/>
+
+        <!-- 8. GET LOCATION -->
+
+        <!-- 9. LOCATION RESULT -->
+        <!-- GET LOCATION -->
+
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_button"
+            android:text="Get Location"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude: --"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude: --"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- 10. SUBMIT REPORT -->
+        <!-- SUBMIT REPORT -->
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button"
+            android:text="SUBMIT REPORT"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
